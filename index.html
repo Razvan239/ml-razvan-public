@@ -13,7 +13,7 @@
 		h1 {
 			font-family: "Times New Roman", Times, serif;
 			color: white;
-			background-color: rgb(50, 50, 50);
+			background-color: black;
 			text-align: center;
 			padding: 20px;
 			margin: 0;
@@ -21,7 +21,7 @@
 		button {
 			font-family: "Times New Roman", Times, serif;
 			font-size: 18px;
-			color: rgb(50, 50, 50);
+			color: black;
 			background-color: transparent;
 			border: none;
 			cursor: pointer;
@@ -37,17 +37,29 @@
            display: flex;
            justify-content: center;
         }
+        .caption {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: 'Times New Roman', serif;
+  color: black;
+}
+
 	</style>
 </head>
 <body>
 	<h1>Descubriendo Gran Canaria</h1>
 	<div style="display: flex; justify-content: center;">
-		<button>Nuevo Lugar que visitar</button>
-		<button>Lugares que no me puedo perder</button>
+        <div class="button-container">
+            <button onclick="location.href='formula.html'">Nuevo Lugar que visitar</button>
+			<button> <button onclick="location.href='tabel.html'">Lugares que no me puedo perder</button>
+          </div>
 	</div>
     <div class="image-container">
-        <img class="image" src="https://lh6.googleusercontent.com/BbY3d3UTaHSm4fRRgHyn7fv_eJ8SFitY-_FDFpByoshEj4lB4FSCs8xOhzJQErN3TrzaEwmpIfqS0hk=w1903-h969" alt="Canare">
+        <img class="image" src="Gran-Canaria-Acusa-Artenara.jpg" alt="Canare">
       </div>
-      <p style="text-align: center;">En esta pequena aplicacion web vamos a ponder regisreae y consultar lugares de Grand Canaria que deberiamos visitar.Tambien vamos a ponder marcar aquellos lugares que ya hemos visitado.</p>
+      <div class="caption">En esta pequena a aplication web vamos a poder registrat y consultar lugares de Gran Canaria que deberiamos visitor. Tambien vamos a poder marcar aquellos que ya heos visitado.</div>
+      
 </body>
 </html>
